@@ -1,8 +1,13 @@
 .b1 {
-    background-image: url("../img/cactus.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-image: url("../img/fondo3.png"); 
+    background-color: #f6f1f1; 
+    height: 400px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: auto;
+}
+
+.b2{
+    background: rgb(40,40,43);
+    background: linear-gradient(90deg, rgba(40,40,43,0.3925945378151261) 0%, rgba(59,59,60,0.4290091036414566) 53%, rgba(21,20,34,0.76234243697479) 83%);
 }

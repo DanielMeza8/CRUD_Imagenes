@@ -34,7 +34,7 @@ $respuesta = mysqli_query($conexion, $query);
                             <td><?php echo $ver['continente'] ?></td>
                             <td><img src="data:image/jpg;base64,<?= base64_encode($ver['bandera'])?>" width="50"></td>
                             <td><a href="./editar.php?id_pais=<?php echo $ver['id_pais']; ?>" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalEditar">Editar</a></td>
-                            <td><a href="#" class="btn btn-danger">Eliminar</a></td>
+                            <td><a href="eliminar.php?id_pais=<?php echo $ver['id_pais']?>" class="btn btn-danger">Eliminar</a></td>
                         </tr>
                     <?php endwhile; ?>
 

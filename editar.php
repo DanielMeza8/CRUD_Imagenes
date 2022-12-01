@@ -6,6 +6,7 @@
     $query = "SELECT * FROM t_paisesMundo WHERE id_pais = '$idPais'";
     $respuesta = mysqli_query($conexion, $query);
     $item = mysqli_fetch_array($respuesta);
+
     require_once "./header.php"; 
 ?>
 
@@ -38,7 +39,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="imagen" class="form-label">Subir bandera</label>
-                    <input type="file" class="form-control" name="imagen" id="imagen">
+                    <input type="file" class="form-control" name="imagen" id="imagen" value="<?= base64_encode($ver['bandera'])?>">
                 </div>
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-warning text-center">Actualizar pais <span class="fa-solid fa-file-signature"></span></button>
